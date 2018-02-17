@@ -1,0 +1,17 @@
+<!-- Author: Trevor Sherrard -->
+<!-- Date: 02/17/2018 -->
+<!-- Project: Intelligent Material Handling System -->
+<!-- This file will launch two python rosserial nodes that will function -->
+<!-- as a bridge between the PC and the two micro-controllers -->
+
+<launch>
+    <node name="serial_node1" pkg="rosserial_python" type="serial_node.py" output="screen">
+        <param name="port" value="/dev/ttyACM0" />
+        <param name="baud" value="57600" />
+    </node>
+
+    <node name="serial_node2" pkg="rosserial_python" type="serial_node.py" output="screen">
+        <param name="port" value="/dev/ttyUSB0" />
+        <param name="baud" value="57600" />
+    </node>
+</launch>
