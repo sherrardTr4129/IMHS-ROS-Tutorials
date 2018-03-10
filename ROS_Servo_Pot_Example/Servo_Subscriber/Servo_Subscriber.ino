@@ -28,8 +28,6 @@ void ServoUpdateCallback(const std_msgs::Int32& mapped_val);
  * Variables 
  ***********************************************
  */
-long servo_val = 0;
-
 ros::NodeHandle nh;
 ros::Subscriber<std_msgs::Int32> subscriber("ServoController", &ServoUpdateCallback);
 
