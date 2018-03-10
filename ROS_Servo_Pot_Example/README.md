@@ -152,7 +152,7 @@ roslaunch files are just xml files with special tags. This file launches two ros
 To run this roslaunch file type the following command in a terminal
 
 ```console
-user@user roslaunch rosserial_servo-pot_example.launch
+user@user:~$ roslaunch rosserial_servo-pot_example.launch
 ```
 
 If an instance of rosmaster is not yet running, executing this roslaunch file will make an instance of rosmaster.
